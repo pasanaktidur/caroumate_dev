@@ -1,0 +1,9 @@
+{
+  "name": "caroumate-netlify-functions",
+  "version": "1.0.0",
+  "description": "Netlify functions for CarouMate backend",
+  "dependencies": {
+    "@google/genai": "^0.14.0",
+    "dotenv": "^16.4.5"
+  }
+}
