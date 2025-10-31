@@ -1,0 +1,34 @@
+# Netlify Ignore File
+# Files to exclude from Netlify build and deployment
+
+# Documentation files (may contain example keys)
+DEPLOY_*.md
+DEPLOYMENT_*.md
+NETLIFY_*.md
+IMPLEMENTATION_*.md
+SUPABASE_*.md
+SETUP_*.md
+FILES_CREATED.md
+NEXT_STEPS.md
+README_SUPABASE.md
+QUICK_REFERENCE.md
+*.txt
+
+# Example files
+*.example.*
+
+# Development files
+.env.local
+.env*.local
+*.log
+
+# Source maps (can expose code)
+*.map
+
+# Test files
+*.test.*
+*.spec.*
+
+# Git files
+.git
+.gitignore
