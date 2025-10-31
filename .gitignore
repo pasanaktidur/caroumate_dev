@@ -22,3 +22,17 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Documentation files with example keys (exclude from git)
+DEPLOY_*.md
+DEPLOYMENT_*.md
+NETLIFY_*.md
+IMPLEMENTATION_*.md
+SUPABASE_*.md
+SETUP_*.md
+FILES_CREATED.md
+NEXT_STEPS.md
+README_SUPABASE.md
+QUICK_REFERENCE.md
+*.txt
+push-to-github.txt
