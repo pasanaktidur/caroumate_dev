@@ -1,13 +1,14 @@
 # Netlify Ignore File
 # Files to exclude from Netlify build and deployment
 
-# Documentation files (may contain example keys)
+# Documentation files (may contain env var names)
 DEPLOY_*.md
-DEPLOYMENT_*.md
+DEPLOYMENT*.md
 NETLIFY_*.md
 IMPLEMENTATION_*.md
 SUPABASE_*.md
 SETUP_*.md
+TROUBLESHOOTING*.md
 FILES_CREATED.md
 NEXT_STEPS.md
 README_SUPABASE.md
@@ -16,11 +17,15 @@ QUICK_REFERENCE.md
 
 # Example files
 *.example.*
+App.supabase.example.tsx
 
 # Development files
-.env.local
-.env*.local
+.env
+.env.*
 *.log
+
+# Clerk react example (not needed for production)
+clerk-react/
 
 # Source maps (can expose code)
 *.map
@@ -32,3 +37,4 @@ QUICK_REFERENCE.md
 # Git files
 .git
 .gitignore
+.gitattributes

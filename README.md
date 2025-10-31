@@ -1,20 +1,90 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Caroumate - AI Carousel Generator
 
-# Run and deploy your AI Studio app
+AI-powered social media carousel generator with Supabase database and Clerk authentication.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1YueljMNOGcmUUgdjbmfja2Fkbe-bAcLW
+- AI-powered carousel content generation
+- Supabase cloud database
+- Clerk authentication (Google, Email)
+- Image and video generation
+- Download carousels as ZIP
+- Custom branding and styling
 
-## Run Locally
+## Setup
 
-**Prerequisites:**  Node.js
+### Prerequisites
+- Node.js 18+
+- Supabase account
+- Clerk account
+- Gemini API access
 
+### Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create `.env.local` file with:
+
+```env
+# Supabase
+VITE_SUPABASE_URL=your-project-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+
+# Clerk
+VITE_CLERK_PUBLISHABLE_KEY=your-clerk-key
+
+# Gemini AI
+GEMINI_API_KEY=your-gemini-key
+```
+
+Get credentials from:
+- Supabase: Dashboard → Settings → API
+- Clerk: Dashboard → API Keys
+- Gemini: https://makersuite.google.com
+
+### Database Setup
+
+Run migration in Supabase SQL Editor:
+```sql
+-- Copy contents from: supabase/migrations/001_initial_schema.sql
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+## Deployment
+
+See local documentation files for detailed deployment guides.
+
+### Netlify
+
+1. Connect GitHub repository
+2. Set environment variables in Netlify dashboard
+3. Deploy
+
+### Post-Deployment
+
+- Add your domain to Clerk dashboard
+- Test authentication
+- Verify database connection
+
+## License
+
+Private project
+
+---
+
+For detailed documentation, see local `.md` files (excluded from git).

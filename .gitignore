@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Clerk example folder (not needed)
+clerk-react/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -25,14 +28,16 @@ dist-ssr
 
 # Documentation files with example keys (exclude from git)
 DEPLOY_*.md
-DEPLOYMENT_*.md
+DEPLOYMENT*.md
 NETLIFY_*.md
 IMPLEMENTATION_*.md
 SUPABASE_*.md
 SETUP_*.md
+TROUBLESHOOTING*.md
 FILES_CREATED.md
 NEXT_STEPS.md
 README_SUPABASE.md
+README.md
 QUICK_REFERENCE.md
 *.txt
 push-to-github.txt
